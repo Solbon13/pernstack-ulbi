@@ -1,6 +1,6 @@
 class ApiError extends Error{
     constructor(status, message) {
-        super()
+        super();
         this.status = status
         this.message = message
     }
@@ -16,7 +16,6 @@ class ApiError extends Error{
     static forbidden(message) {
         return new ApiError(403, message)
     }
-
 }
 
 module.exports = ApiError
